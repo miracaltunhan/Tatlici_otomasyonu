@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4418E667-37E4-44AC-A807-946901C97AEF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>otomasyonproje</RootNamespace>
+    <AssemblyName>otomasyonproje</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formPrsnlGörüntüle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formPrsnlGörüntüle.Designer.cs">
+      <DependentUpon>formPrsnlGörüntüle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGider.Designer.cs">
+      <DependentUpon>frmGider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGiris.Designer.cs">
+      <DependentUpon>frmGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMasalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMasalar.Designer.cs">
+      <DependentUpon>frmMasalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu2.Designer.cs">
+      <DependentUpon>frmMenu2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuGoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuGoruntule.Designer.cs">
+      <DependentUpon>frmMenuGoruntule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrsnlAyarları.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrsnlAyarları.Designer.cs">
+      <DependentUpon>frmPrsnlAyarları.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrsnlDuzenleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrsnlDuzenleme.Designer.cs">
+      <DependentUpon>frmPrsnlDuzenleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrsnlEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrsnlEkle.Designer.cs">
+      <DependentUpon>frmPrsnlEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRapor.Designer.cs">
+      <DependentUpon>frmRapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSifre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSifre.Designer.cs">
+      <DependentUpon>frmSifre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSiparis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSiparis.Designer.cs">
+      <DependentUpon>frmSiparis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSiparis2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSiparis2.Designer.cs">
+      <DependentUpon>frmSiparis2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUrunEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUrunEkle.Designer.cs">
+      <DependentUpon>frmUrunEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmÖdeme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmÖdeme.Designer.cs">
+      <DependentUpon>frmÖdeme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmÖdeme2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmÖdeme2.Designer.cs">
+      <DependentUpon>frmÖdeme2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formPrsnlGörüntüle.resx">
+      <DependentUpon>formPrsnlGörüntüle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGider.resx">
+      <DependentUpon>frmGider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGiris.resx">
+      <DependentUpon>frmGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMasalar.resx">
+      <DependentUpon>frmMasalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu2.resx">
+      <DependentUpon>frmMenu2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuGoruntule.resx">
+      <DependentUpon>frmMenuGoruntule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrsnlAyarları.resx">
+      <DependentUpon>frmPrsnlAyarları.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrsnlDuzenleme.resx">
+      <DependentUpon>frmPrsnlDuzenleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrsnlEkle.resx">
+      <DependentUpon>frmPrsnlEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRapor.resx">
+      <DependentUpon>frmRapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSifre.resx">
+      <DependentUpon>frmSifre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSiparis.resx">
+      <DependentUpon>frmSiparis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSiparis2.resx">
+      <DependentUpon>frmSiparis2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUrunEkle.resx">
+      <DependentUpon>frmUrunEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmÖdeme.resx">
+      <DependentUpon>frmÖdeme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmÖdeme2.resx">
+      <DependentUpon>frmÖdeme2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ısletme.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buhara_logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_image.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\masalar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\çalışanlar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rapor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menü.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_logout1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gazi,.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\personel setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geri gel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\masa2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\masa4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-cafe-restaurant-table-logo-hotel-table-angle-furniture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guney-restaurant-ana-sayfa-hakkimizda-icon-001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\masa21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-daily-expense-manager-expense-management-business-business-text-human-resource-management-people-thumbnail.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
